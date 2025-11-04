@@ -1,0 +1,7 @@
+---
+services:
+  handbrake:
+    image: dudecalledbro/handbrake:latest
+    container_name: handbrake
+    volumes:
+      - ./data:/data:rw

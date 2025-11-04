@@ -1,0 +1,5 @@
+---
+# https://github.com/apps/settings
+repository:
+  description: A lightweight Docker image for video encoding using HandBrakeCLI.
+  topics: automation, handbrake, container, docker
