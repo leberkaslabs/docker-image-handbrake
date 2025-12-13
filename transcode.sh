@@ -7,5 +7,9 @@ set -o pipefail # exit on pipeline errors
 
 TRANSCODEDIR="${1:-/data}"
 
-# Change the preset if you like (see options: "HandBrakeCLI --preset-list")
-find "$TRANSCODEDIR"/* -type f -name "*.mkv" -exec bash -c 'HandBrakeCLI -i "$1" -o "${1%\.*}".mp4 --preset="General/HQ 1080p30 Surround" --all-audio' __ {} \;
+# Set the default HandBrake encoding preset.
+# You can customize this preset by changing the value below.
+# To view available presets, use the command: "HandBrakeCLI --preset-list"
+HANDBRAKE_PRESET="${HANDBRAKE_PRESET:-General/HQ 1080p30 Surround}"
+
+find "$TRANSCODEDIR"/* -type f -name "*.mkv" -exec bash -c 'HandBrakeCLI -i "$1" -o "${1%\.*}.mp4" --preset="$2" --all-audio' _ {} "$HANDBRAKE_PRESET" \;

@@ -1,5 +1,6 @@
 .DS_Store
 
-# ignore local docker compose data
+# ignore local docker compose files
 data/*
 !data/.gitkeep
+compose.override.yaml

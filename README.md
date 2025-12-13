@@ -13,6 +13,9 @@ docker pull dudecalledbro/handbrake:latest
 With this Docker image, HandBrake can be easily used to encode `*.mkv` files. This is particularly useful if you are using a dedicated encoding server or want to use HandBrake without a local installation. The image can be run via Docker Compose, for example. To do this, simply copy all videos to be processed into the `data` directory. The container can then be started, which automatically begins the encoding process.
 
 ```bash
+# Create Docker Compose Overide Configuration (for GPUs)
+cp example.compose.override.yaml compose.override.yaml
+
 # Start Docker Container
 docker compose up --detach
 
