@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.source="https://github.com/leberkaslabs/docker-im
 # Install HandBrake and its dependencies
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get -qy update && \
-    apt-get -qy install handbrake handbrake-cli libdvd-pkg && \
+    apt-get -qy install handbrake handbrake-cli libdvd-pkg libnvidia-encode-580 && \
     apt-get -qy clean && \
     rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man
 
