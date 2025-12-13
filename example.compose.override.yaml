@@ -4,5 +4,5 @@ services:
     environment:
       # Set the HandBrake preset for GPU-accelerated encoding
       # Example for NVIDIA GPUs using the H.265 codec
-      HANDBRAKE_PRESET: "H.265 NVENC 1080p"
+      HANDBRAKE_PRESET: "Hardware/H.265 NVENC 1080p"
     gpus: all
