@@ -1,6 +1,6 @@
 # Handbrake
 
-[![Container Release (handbrake)](https://github.com/leberkaslabs/docker-image-handbrake/actions/workflows/build-push-action.yml/badge.svg)](https://github.com/leberkaslabs/docker-image-handbrake/actions/workflows/build-push-action.yml)
+[![Container Release (handbrake)](https://github.com/leberkaslabs/docker-image-handbrake/actions/workflows/build.yml/badge.svg)](https://github.com/leberkaslabs/docker-image-handbrake/actions/workflows/build.yml)
 
 This repository is designed to build Docker images for [handbrake](https://handbrake.fr/).
 
